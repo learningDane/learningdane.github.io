@@ -265,6 +265,67 @@ h2.section-title {
     background: var(--border);
 }
 
+/* TIMELINE */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 1px;
+    background: var(--border);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 2.5rem;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2.35rem;
+    top: 0.3rem;
+    width: 8px; height: 8px;
+    border: 1px solid var(--accent);
+    background: var(--bg);
+    transform: rotate(45deg);
+}
+
+.timeline-date {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.72rem;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+    margin-bottom: 0.4rem;
+}
+
+.timeline-role {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.25rem;
+    color: var(--text);
+    margin-bottom: 0.2rem;
+}
+
+.timeline-org {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    margin-bottom: 0.75rem;
+}
+
+.timeline-desc {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.7;
+    font-weight: 300;
+    max-width: 560px;
+}
+
 /* E-TEAM */
 #eteam {
     background: linear-gradient(135deg, rgba(224,90,32,0.05) 0%, transparent 60%);
@@ -403,67 +464,6 @@ h2.section-title {
     margin-top: 1rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-}
-
-/* TIMELINE */
-.timeline {
-    position: relative;
-    padding-left: 2rem;
-}
-
-.timeline::before {
-    content: '';
-    position: absolute;
-    left: 0; top: 0; bottom: 0;
-    width: 1px;
-    background: var(--border);
-}
-
-.timeline-item {
-    position: relative;
-    padding-bottom: 2.5rem;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -2.35rem;
-    top: 0.3rem;
-    width: 8px; height: 8px;
-    border: 1px solid var(--accent);
-    background: var(--bg);
-    transform: rotate(45deg);
-}
-
-.timeline-date {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.72rem;
-    color: var(--accent);
-    letter-spacing: 0.1em;
-    margin-bottom: 0.4rem;
-}
-
-.timeline-role {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.25rem;
-    color: var(--text);
-    margin-bottom: 0.2rem;
-}
-
-.timeline-org {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.78rem;
-    color: var(--muted);
-    letter-spacing: 0.06em;
-    margin-bottom: 0.75rem;
-}
-
-.timeline-desc {
-    font-size: 0.9rem;
-    color: var(--muted);
-    line-height: 1.7;
-    font-weight: 300;
-    max-width: 560px;
 }
 
 /* PROJECTS */
