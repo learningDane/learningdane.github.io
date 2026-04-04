@@ -370,9 +370,9 @@ h2.section-title {
     justify-content: center;
 }
 
-.car-container { position: relative; width: 100%; max-width: 420px; }
+.poster-container { position: relative; width: 100%; max-width: 420px; }
 
-.car-frame {
+.poster-frame {
     background: var(--surface);
     border: 1px solid var(--border);
     padding: 2rem;
@@ -380,7 +380,7 @@ h2.section-title {
     overflow: hidden;
 }
 
-.car-frame::before {
+.poster-frame::before {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0;
@@ -388,14 +388,14 @@ h2.section-title {
     background: linear-gradient(90deg, var(--eteam), var(--eteam2), var(--eteam));
 }
 
-.car-svg-wrap { text-align: center; }
-.car-svg-wrap svg {
+.poster-webp-wrap { text-align: center; }
+.poster-webp-wrap image {
     width: 100%;
     max-width: 360px;
     filter: drop-shadow(0 0 20px rgba(224,90,32,0.3));
 }
 
-.car-label {
+.poster-label {
     font-family: 'DM Mono', monospace;
     font-size: 0.7rem;
     color: var(--muted);

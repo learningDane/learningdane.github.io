@@ -15,6 +15,9 @@ const observer = new IntersectionObserver((entries) => {
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
+    /* Movimento del glow dello sfondo
+     *
+     */
     const glow = document.querySelector('.hero-glow');
     document.addEventListener('mousemove', (e) => {
         if (!glow) return;
