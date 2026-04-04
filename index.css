@@ -265,6 +265,29 @@ h2.section-title {
     background: var(--border);
 }
 
+/* Freccia */
+.scroll-arrow {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    animation: bounce 2s ease-in-out infinite;
+    text-decoration: none;
+}
+
+.scroll-arrow.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50%       { transform: translateX(-50%) translateY(6px); }
+}
+
 /* TIMELINE */
 .timeline {
     position: relative;

@@ -26,3 +26,13 @@ const observer = new IntersectionObserver((entries) => {
         glow.style.left = `${20 + x * 0.2}%`;
         glow.style.top = `${30 + y * 0.2}%`;
     });
+
+// Scomparsa della freccia in fondo alla sezione HERO [[
+const scrollArrow = document.querySelector('.scroll-arrow');
+const bioSection = document.getElementById('bio');
+    // quando arrivo a metà tra Hero e Bio scompare
+window.addEventListener('scroll', () => {
+    const halfway = bioSection.offsetTop / 2;
+    scrollArrow.classList.toggle('hidden', window.scrollY > halfway);
+});
+// ]]
