@@ -310,8 +310,8 @@ h2.section-title {
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: calc(-2rem - 3.5px);
-    top: 0 rem;
+    left: calc(-2rem - 4px);
+    top: 0.4rem;
     width: 8px; height: 8px;
     border: 1px solid var(--accent);
     background: var(--bg);
