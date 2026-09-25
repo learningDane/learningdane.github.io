@@ -725,6 +725,7 @@ footer {
     .hero-panel { padding-left: 0; }
     section { padding: 4rem 1.5rem; }
     .eteam-grid { grid-template-columns: 1fr; }
+    .dispense-grid { grid-template-columns: 1fr; gap: 2rem; }
     .eteam-specs { grid-template-columns: 1fr 1fr; }
     .projects-grid { grid-template-columns: 1fr; }
     #eteam .inner { padding: 0 1.5rem; }
